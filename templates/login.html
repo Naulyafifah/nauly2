@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css')}}">
+    <title>Login</title>
+</head>
+<body bgcolor="#ffe6c7">
+
+<form action="/form_login" method="post">
+    <img src="{{url_for('static', filename='images/Cute_Bear.png')}}" class="featured-image" style="height: 100px; width:auto;">
+    <div class="login">
+        <p>Nama Kamu</p>
+        <input type="text" name="username">
+        <button type="submit" style="background-color: #fff;">Submit</button>
+    </div>
+</form>
+</body>
+</html>
